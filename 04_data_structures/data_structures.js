@@ -67,7 +67,8 @@ DS = {
         return curr.value;
     },
     deepEqual: function de(o1, o2) {
-        if (typeof o1 !== 'object' || typeof o2 !== 'object') {
+        if (typeof o1 !== 'object' || typeof o2 !== 'object'
+                || o1 === null || o2 === null) {
             return o1 === o2;
         }
         else {
@@ -113,3 +114,5 @@ obj = {here: {is: "an"}, object: 2};
 document.writeln("Testing deepEqual");
 document.writeln("false: ", DS.deepEqual(obj, {here: 1, object: 2}));
 document.writeln("true: ", DS.deepEqual(obj, {here: {is: "an"}, object: 2}));
+document.writeln("true: ", DS.deepEqual({a: null}, {a: null}));
+document.writeln("true: ", DS.deepEqual(null, null));
