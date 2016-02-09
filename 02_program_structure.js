@@ -4,14 +4,14 @@ PS = {
         var i;
         for (i = 0; i < len; i += 1) {
             s += '#';
-            document.writeln(s);
+            console.log(s);
         }
     },
     fizzbuzz: function (max) {
         var i;
         for (i = 1; i <= max; i += 1) {
             var output = (i%5 === 0 ? "Fizz": "") + (i%3 === 0 ? "Buzz": "");
-            output ? document.writeln(output): document.writeln(i);
+            output ? console.log(output): console.log(i);
         }
     },
     chessboard: function (size) {
@@ -27,14 +27,14 @@ PS = {
     }
 }
 
-document.writeln("Loop Triangle")
+console.log("Loop Triangle")
 PS.loop_triangle(7);
-document.writeln("Fizzbuzz")
+console.log("Fizzbuzz")
 PS.fizzbuzz(100);
-document.writeln("Chessboard 8")
-document.writeln(PS.chessboard(8));
-document.writeln("Chessboard 11")
-document.writeln(PS.chessboard(11));
+console.log("Chessboard 8")
+console.log(PS.chessboard(8));
+console.log("Chessboard 11")
+console.log(PS.chessboard(11));
 
 
 

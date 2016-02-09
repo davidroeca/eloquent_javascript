@@ -81,38 +81,38 @@ DS = {
     }
 }
 
-document.writeln("Testing range 1-30");
-document.writeln(DS.range(1, 30));
-document.writeln("Testing range 0-20, step 5");
-document.writeln(DS.range(0, 20, 5));
-document.writeln("Testing range 20-0, step -5");
-document.writeln(DS.range(20, 0, -5));
-document.writeln("Testing range 30-1, step -1");
-document.writeln(DS.range(30, 1, -1));
+console.log("Testing range 1-30");
+console.log(DS.range(1, 30));
+console.log("Testing range 0-20, step 5");
+console.log(DS.range(0, 20, 5));
+console.log("Testing range 20-0, step -5");
+console.log(DS.range(20, 0, -5));
+console.log("Testing range 30-1, step -1");
+console.log(DS.range(30, 1, -1));
 
-document.writeln("Testing sum range 1-30");
-document.writeln(DS.sum(DS.range(1, 30)));
+console.log("Testing sum range 1-30");
+console.log(DS.sum(DS.range(1, 30)));
 
-document.writeln("Testing reverseArray [1, 2, 3]");
-document.writeln(DS.reverseArray([1, 2, 3]));
+console.log("Testing reverseArray [1, 2, 3]");
+console.log(DS.reverseArray([1, 2, 3]));
 
-document.writeln("Testing reverseArrayInPlace [3, 5, 7, 9]");
+console.log("Testing reverseArrayInPlace [3, 5, 7, 9]");
 array1 = [3, 5, 7, 9];
 DS.reverseArrayInPlace(array1);
-document.writeln(array1);
+console.log(array1);
 
-document.writeln("Testing arrayToList [1, 2, 3, 77, 99]");
+console.log("Testing arrayToList [1, 2, 3, 77, 99]");
 console.log(DS.arrayToList([1, 2, 3, 77, 99]));
 
-document.writeln("Testing prepend(9, {value: 1, rest: null})");
+console.log("Testing prepend(9, {value: 1, rest: null})");
 console.log(DS.prepend(9, {value: 1, rest: null}));
 
-document.writeln("Testing nth(arrayToList([1, 2, 33, 47]), 2)");
-document.writeln(DS.nth(DS.arrayToList([1, 2, 33, 47]), 2));
+console.log("Testing nth(arrayToList([1, 2, 33, 47]), 2)");
+console.log(DS.nth(DS.arrayToList([1, 2, 33, 47]), 2));
 
 obj = {here: {is: "an"}, object: 2};
-document.writeln("Testing deepEqual");
-document.writeln("false: ", DS.deepEqual(obj, {here: 1, object: 2}));
-document.writeln("true: ", DS.deepEqual(obj, {here: {is: "an"}, object: 2}));
-document.writeln("true: ", DS.deepEqual({a: null}, {a: null}));
-document.writeln("true: ", DS.deepEqual(null, null));
+console.log("Testing deepEqual");
+console.log("false: ", DS.deepEqual(obj, {here: 1, object: 2}));
+console.log("true: ", DS.deepEqual(obj, {here: {is: "an"}, object: 2}));
+console.log("true: ", DS.deepEqual({a: null}, {a: null}));
+console.log("true: ", DS.deepEqual(null, null));

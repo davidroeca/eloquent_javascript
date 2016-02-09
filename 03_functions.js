@@ -28,15 +28,15 @@ FUNCTIONS = {
     }
 }
 
-document.writeln(FUNCTIONS.min(1, 2));
-document.writeln(FUNCTIONS.min(3, 2));
-document.writeln(FUNCTIONS.min(15, 22));
+console.log(FUNCTIONS.min(1, 2));
+console.log(FUNCTIONS.min(3, 2));
+console.log(FUNCTIONS.min(15, 22));
 
-document.writeln(FUNCTIONS.isEven(10));
-document.writeln(FUNCTIONS.isEven(11));
-document.writeln(FUNCTIONS.isEven(-11));
-document.writeln(FUNCTIONS.isEven(-11));
-document.writeln(FUNCTIONS.isEven(-12.3));
-document.writeln(FUNCTIONS.isEven(12.3));
+console.log(FUNCTIONS.isEven(10));
+console.log(FUNCTIONS.isEven(11));
+console.log(FUNCTIONS.isEven(-11));
+console.log(FUNCTIONS.isEven(-11));
+console.log(FUNCTIONS.isEven(-12.3));
+console.log(FUNCTIONS.isEven(12.3));
 
-document.writeln(FUNCTIONS.countChar("abcdeccc", "c"));
+console.log(FUNCTIONS.countChar("abcdeccc", "c"));
