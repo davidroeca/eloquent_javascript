@@ -19,9 +19,8 @@ FUNCTIONS = {
         message: "First input must be a string."
       };
     }
-    var i;
     var cnt = 0;
-    for (i = 0; i < s.length; i += 1) {
+    for (var i = 0; i < s.length; i += 1) {
       cnt += s[i] === c ? 1: 0;
     }
     return cnt;
