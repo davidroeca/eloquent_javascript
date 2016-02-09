@@ -1,30 +1,30 @@
 PS = {
-    loop_triangle: function (len) {
-        var s = '';
-        var i;
-        for (i = 0; i < len; i += 1) {
-            s += '#';
-            console.log(s);
-        }
-    },
-    fizzbuzz: function (max) {
-        var i;
-        for (i = 1; i <= max; i += 1) {
-            var output = (i%5 === 0 ? "Fizz": "") + (i%3 === 0 ? "Buzz": "");
-            output ? console.log(output): console.log(i);
-        }
-    },
-    chessboard: function (size) {
-        var s = '';
-        var i, j;
-        for (i = 0; i < size; i += 1) {
-            for (j = 0; j < size; j += 1) {
-                s += ((i + j) % 2) ? '#' : ' ';
-            }
-            s += '\n';
-        }
-        return s;
+  loop_triangle: function (len) {
+    var s = '';
+    var i;
+    for (i = 0; i < len; i += 1) {
+      s += '#';
+      console.log(s);
     }
+  },
+  fizzbuzz: function (max) {
+    var i;
+    for (i = 1; i <= max; i += 1) {
+      var output = (i%5 === 0 ? "Fizz": "") + (i%3 === 0 ? "Buzz": "");
+      output ? console.log(output): console.log(i);
+    }
+  },
+  chessboard: function (size) {
+    var s = '';
+    var i, j;
+    for (i = 0; i < size; i += 1) {
+      for (j = 0; j < size; j += 1) {
+        s += ((i + j) % 2) ? '#' : ' ';
+      }
+      s += '\n';
+    }
+    return s;
+  }
 }
 
 console.log("Loop Triangle")
