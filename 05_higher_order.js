@@ -1,4 +1,5 @@
-HOF = {
+"use strict";
+var HOF = {
   flatten: function (arr) {
    return arr.reduce(function(a, b) {
      return a.concat(b);

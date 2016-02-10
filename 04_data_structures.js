@@ -1,15 +1,16 @@
-DS = {
+"use strict";
+var DS = {
   range: function (start, stop, step) {
     step = step ? step : 1;
     var output = [];
     if (step < 0) {
       for (var i = start; i >= stop; i += step) {
         output.push(i);
-      }
+      };
     } else {
       for (var i = start; i <= stop; i += step) {
         output.push(i);
-      }
+      };
     }
     return output;
   },
@@ -17,22 +18,22 @@ DS = {
     var s = 0;
     for (var i = 0; i < arr.length; i += 1) {
       s += arr[i];
-    }
+    };
     return s;
   },
   reverseArray: function (arr) {
     var out = [];
     for (var i = 0; i < arr.length; i += 1) {
       out[i] = arr[arr.length - i - 1];
-    }
+    };
     return out;
   },
   reverseArrayInPlace: function (arr) {
     for (var i = 0; i < arr.length / 2; i += 1) {
-      tmp = arr[i];
+      var tmp = arr[i];
       arr[i] = arr[arr.length - i - 1];
       arr[arr.length - i - 1] = tmp;
-    }
+    };
   },
   arrayToList: function (arr) {
     var list = {};
@@ -71,7 +72,7 @@ DS = {
       for (var key in o1) {
         if (!o1.hasOwnProperty(key)) continue;
         if (!de(o1[key], o2[key])) return false;
-      }
+      };
       return true;
     }
   }
@@ -93,7 +94,7 @@ console.log("Testing reverseArray [1, 2, 3]");
 console.log(DS.reverseArray([1, 2, 3]));
 
 console.log("Testing reverseArrayInPlace [3, 5, 7, 9]");
-array1 = [3, 5, 7, 9];
+var array1 = [3, 5, 7, 9];
 DS.reverseArrayInPlace(array1);
 console.log(array1);
 
@@ -106,7 +107,7 @@ console.log(DS.prepend(9, {value: 1, rest: null}));
 console.log("Testing nth(arrayToList([1, 2, 33, 47]), 2)");
 console.log(DS.nth(DS.arrayToList([1, 2, 33, 47]), 2));
 
-obj = {here: {is: "an"}, object: 2};
+var obj = {here: {is: "an"}, object: 2};
 console.log("Testing deepEqual");
 console.log("false: ", DS.deepEqual(obj, {here: 1, object: 2}));
 console.log("true: ", DS.deepEqual(obj, {here: {is: "an"}, object: 2}));

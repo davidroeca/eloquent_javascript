@@ -1,4 +1,5 @@
-PS = {
+"use strict";
+var PS = {
   loop_triangle: function (len) {
     var s = '';
     for (var i = 0; i < len; i += 1) {
