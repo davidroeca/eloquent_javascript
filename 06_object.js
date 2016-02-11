@@ -1,4 +1,5 @@
-SLO = {
+"use strict";
+var SLO = {
   // Taking advantage of functional constructors Crockford p. 52
   vector: function constructor(spec, my) {
     var that = {};
@@ -57,7 +58,7 @@ SLO = {
       console.log(iter.next());
     };
   }
-}
+};
 
 var v1 = SLO.vector({x: 17, y: 0});
 var v2 = SLO.vector({x: 17, y: -17});
